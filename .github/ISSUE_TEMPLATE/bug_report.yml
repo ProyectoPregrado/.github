@@ -1,0 +1,66 @@
+name: "🐞 Bug report"
+description: Reportar un error o comportamiento inesperado
+labels: ["bug", "triage"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidad
+      options: ["P0 - Crítico (bloquea)", "P1 - Alto", "P2 - Medio", "P3 - Bajo"]
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options: ["Backend (NestJS)", "Frontend (React)", "Infra/CI", "Docs"]
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: Entorno / versión
+      placeholder: "Rama/Commit, Node vXX, SO/Navegador"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: "Lista numerada con pasos claros"
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado actual
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / evidencia
+      description: "Pega logs, respuesta de API o adjunta capturas"
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: He reproducido el bug al menos 2 veces
+        - label: Incluí pasos, evidencia y entorno
+        - label: Indiqué severidad y área

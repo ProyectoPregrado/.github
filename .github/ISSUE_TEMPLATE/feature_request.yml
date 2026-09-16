@@ -1,0 +1,60 @@
+name: "✨ Feature request"
+description: Proponer una nueva funcionalidad o mejora
+labels: ["enhancement", "design-needed"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / oportunidad
+      description: "¿Qué problema resuelve? ¿Qué valor aporta?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User story (si aplica)
+      placeholder: "Como <rol>, quiero <acción> para <beneficio>."
+  
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta de solución
+      description: "Describir endpoints, UI, lógica o cambios técnicos"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación
+      placeholder: "- Dado... Cuando... Entonces..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: nonfunc
+    attributes:
+      label: Requisitos no funcionales
+      placeholder: "Rendimiento, seguridad, accesibilidad, compatibilidad, etc."
+
+  - type: input
+    id: dependencies
+    attributes:
+      label: Dependencias / impactos
+      placeholder: "BD, servicios, módulos, librerías"
+
+  - type: input
+    id: design
+    attributes:
+      label: Diseño / mockups
+      placeholder: "Link a Figma / imágenes"
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Incluí criterios de aceptación
+        - label: Revisé impacto en BD/API
+        - label: Añadí diseños o referencias si aplica

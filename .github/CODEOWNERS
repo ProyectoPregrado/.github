@@ -1,0 +1,21 @@
+# -----------------------------------------------------
+# 🔒 CODEOWNERS - Organización MyCSW
+# Define revisores automáticos por área de trabajo.
+# -----------------------------------------------------
+
+# 👤 Reglas globales (aplica a todos los repos)
+* @AnthonyPSW @Mabe-Zapata
+
+# -----------------------------------------------------
+# 🧠 Backend (NestJS)
+# Solo Anthony revisa y aprueba cambios de MyCS_BackEnd
+/MyCS_BackEnd/** @AnthonyPSW
+
+# -----------------------------------------------------
+# 💻 Frontend (React)
+# Anthony y Maria revisan y aprueban cambios de MyCS_FrontEnd
+/MyCS_FrontEnd/** @AnthonyPSW @Mabe-Zapata
+
+# -----------------------------------------------------
+# 🗂️ Configuración global y documentación
+/.github/** @AnthonyPSW
